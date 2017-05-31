@@ -1,10 +1,13 @@
+<span vocab="http://health-lifesci.schema.org/" typeof="Outcome">
+    <p>Outcome's code:</p><span property="code">{{ outcome.code }}</span>
 
-    <p>Outcome's code: {{ outcome.code }}</p>
+    <p>Outcome's name:</p><span property="name">{{ outcome.name }}</span>
 
-    <p>Outcome's name: {{ outcome.name }}</p>
-
-    <p>Outcome's associated crime: {{ outcome.Associated_crime }}</p>
-
+    <span rel="Crime">
+      <p typeof="Crime">
+    <p>Outcome's associated crime:</p><span property="Associated_crime">{{ outcome.Associated_crime }}</span>
+      </p>
+    </span>
     <p><a href="{% url 'outcome_edit' outcome.id %}">Edit</a></p>
 
 <a href="{% url 'home' %}">Back</a>
