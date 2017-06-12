@@ -4,11 +4,17 @@
 
   <p>Crime's persisten id: <span property="identifier">{{ crime.persisten_id }}</span></p>
 
-  <p>Crime's latitude: <span property="location">{{ crime.latitude }}</span></p>
+  <div class="location" property="location" typeof="Place">
+  <p>Crime's latitude: <span property="geo">{{ crime.latitude }}</span></p>
+  <span property="address">null</span>
+  </div>
 
-  <p>Crime's longitude: <span property="location">{{ crime.longitude }}</span></p>
+  <div class="location" property="location" typeof="Place">
+  <p>Crime's longitude: <span property="geo">{{ crime.longitude }}</span></p>
+  <span property="address">null</span>
+  </div>
 
-  <p>Crime's date: <span property="endDate">{{ crime.date }}</span></p>
+  <p>Crime's date: <span property="startDate">{{ crime.date }}</span></p>
 
   <p>Crime's policeman assignated: <span property="performer">{{ crime.policeman_assignated }}</span></p>
 

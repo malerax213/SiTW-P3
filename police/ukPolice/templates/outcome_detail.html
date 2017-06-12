@@ -3,8 +3,15 @@
 
     <p>Outcome's name: <span property="name">{{ outcome.name }}</span></p>
 
-    <p>Outcome's associated crime: <span property="superEvent">{{ outcome.Associated_crime }}</span></p>
-</span>
+    <div class="potentialAction" property="potentialAction" typeof="Action">
+    <p>Outcome's associated crime: <span property="name">{{ outcome.Associated_crime }}</span></p></span>
+    </div>
+
+    <p>Outcome's general startDate: <span property="startDate">01/01/2001</span></p>
+
+    <div class="location" property="location" typeof="Place">
+    <p>Outcome's general country: <span property="address">Uk</span></p>
+    </div>
 
     <p><a href="{% url 'outcome_edit' outcome.id %}">Edit</a></p>
 

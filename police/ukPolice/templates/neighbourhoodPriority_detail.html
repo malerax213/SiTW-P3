@@ -1,11 +1,19 @@
 <span vocab="http://schema.org/" typeof="AdministrativeArea">
-    <p>NeighbourhoodPriority's action: <span property="additionalProperty">{{ neighbourhoodpriority.action }}</span></p>
+    <div class="event" property="event" typeof="Event">
+    <p>NeighbourhoodPriority's action: <span property="name">{{ neighbourhoodpriority.action }}</span></p>
+    <p>NeighbourhoodPriority's action date: <span property="startDate">{{ neighbourhoodpriority.action_date }}</span></p>
+      <div class="location" property="location" typeof="Place">
+      <p>NeighbourhoodPriority's general country: <span property="address">Uk</span></p>
+      </div>
+    </div>
 
-    <p>NeighbourhoodPriority's action date: <span property="">{{ neighbourhoodpriority.action_date }}</span></p>
-
-    <p>NeighbourhoodPriority's issue: <span property="event">{{ neighbourhoodpriority.issue }}</span></p>
-
-    <p>NeighbourhoodPriority's issue date: <span property="">{{ neighbourhoodpriority.issue_date }}</span></p>
+    <div class="event" property="event" typeof="Event">
+    <p>NeighbourhoodPriority's issue: <span property="name">{{ neighbourhoodpriority.issue }}</span></p>
+    <p>NeighbourhoodPriority's issue date: <span property="startDate">{{ neighbourhoodpriority.issue_date }}</span></p>
+      <div class="location" property="location" typeof="Place">
+      <p>NeighbourhoodPriority's general country: <span property="address">Uk</span></p>
+      </div>
+    </div>
 
     <p>NeighbourhoodPriority's neighbourhood: <span property="name">{{ neighbourhoodpriority.neighbourhood }}</span></p>
 
