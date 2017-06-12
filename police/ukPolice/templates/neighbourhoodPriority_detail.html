@@ -1,13 +1,13 @@
+<span vocab="http://schema.org/" typeof="AdministrativeArea">
+    <p>NeighbourhoodPriority's action: <span property="additionalProperty">{{ neighbourhoodpriority.action }}</span></p>
 
-    <p>NeighbourhoodPriority's action: {{ neighbourhoodpriority.action }}</p>
+    <p>NeighbourhoodPriority's action date: <span property="">{{ neighbourhoodpriority.action_date }}</span></p>
 
-    <p>NeighbourhoodPriority's action date: {{ neighbourhoodpriority.action_date }}</p>
+    <p>NeighbourhoodPriority's issue: <span property="event">{{ neighbourhoodpriority.issue }}</span></p>
 
-    <p>NeighbourhoodPriority's issue: {{ neighbourhoodpriority.issue }}</p>
+    <p>NeighbourhoodPriority's issue date: <span property="">{{ neighbourhoodpriority.issue_date }}</span></p>
 
-    <p>NeighbourhoodPriority's issue date: {{ neighbourhoodpriority.issue_date }}</p>
-
-    <p>NeighbourhoodPriority's neighbourhood: {{ neighbourhoodpriority.neighbourhood }}</p>
+    <p>NeighbourhoodPriority's neighbourhood: <span property="name">{{ neighbourhoodpriority.neighbourhood }}</span></p>
 
     <p><a href="{% url 'neighbourhoodPriority_edit' neighbourhoodpriority.id %}">Edit</a></p>
 
